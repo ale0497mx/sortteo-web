@@ -1,0 +1,271 @@
+.sorteo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color-verde);
+}
+.sorteo__titulo{
+    font-size: 4.5rem;
+    margin: 5% 0 5% 0;
+    color: white;
+    border-bottom: 4px solid white;
+    /* padding-top: 2%; */
+    
+}
+.sorteo__contenido{
+    display: flex;
+    width: 90%;
+    height: 80%;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 5%;
+    
+flex-direction: column;
+    align-items: center;
+}
+.sorteo__contenido-con-1{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 5%;
+    justify-content: space-evenly;
+}
+#numbers-container{
+    width: 40%;
+}
+.sorteo__datos{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2% 0 0;
+    
+}
+.sorteo__titulo--datos{
+    text-align: center;
+    font-size: 2.5rem;
+    width: 100%;
+    color: var(--color-verde);
+}
+.sorteo__texto-indicaciones{
+    padding: 4% 0;
+    font-size: 1.5rem;
+}
+.sorteo__referencia{
+    display: flex;
+    list-style: none;
+    width: 120%;
+    margin: 5% 0 10% 0;
+    justify-content: space-evenly;
+    
+}
+.sorteo__lista-contendo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28%;
+    outline: 4px solid var(--color-verde);
+    border-radius: 5px;
+    overflow: hidden; /* Agregar esta propiedad para ocultar contenido que se desborde */
+}
+.lista-2{
+    outline: 4px solid red;
+}
+.lista-3{
+    background-color: var(--color-verde);
+    color: white;
+    outline: 4px solid black;
+}
+.sorteo__titulos-lista{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .75rem 0;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid var(--color-verde);
+
+}
+.titulo__lista-1{
+    color: var(--color-verde);
+}
+.titulo__lista-2{
+    color: red;
+    border-bottom: 1px solid red;
+}
+.titulo__lista-3{
+    color: white;
+    border-bottom: 1px solid white;
+}
+.sorte__contenido-lista {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 5%;
+    width: 100%;
+    overflow: hidden; /* Agregar esta propiedad para ocultar contenido que se desborde */
+  }
+.sorteo__numero {
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 30px; /* Cambiar el valor del ancho a uno fijo */
+    height: 30px; /* Cambiar el valor del alto a uno fijo */
+    text-align: center;
+    margin: 0 2% 0 2%;
+    flex-shrink: 0; /* Añadir esta propiedad para evitar que los números se deformen */
+}
+
+.ejemplo-1{
+    background: var(--color-verde);
+    color: white;
+    width: 30px;
+    
+}
+.ejemplo-2{
+    background: red;
+    width: 30px;
+}
+.ejemplo-3{
+    color: black;
+    background: white;
+    width: 30px;
+}
+.sorteo__numero3{
+    margin: 0 0 4% 2%;
+}
+.sorteo__texto-inferior{
+    font-size: .8rem;
+    margin-bottom: 4%;
+}
+.sorteo__boton{
+    font-size: 1.5rem;
+    font-style: bold;
+    font-weight: 700;
+    color: var(--color-verde);
+    background: white;
+    margin-bottom: 4%;
+}
+.sorteo__boton:hover{
+    font-size: 1.8rem;
+    color: white;
+    background: var(--color-verde);
+    transition: .4s linear;
+}
+
+.number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.number.selected {
+    background-color: green;
+    color: white;
+}
+
+.number.occupied {
+    background: red;
+}
+
+#numbers-container {
+    width: 40%;
+    user-select: none;
+}
+@media screen and (max-width:1200px){
+    .sorteo__contenido-con-1{
+        /* flex-direction: column */
+        align-items: center;
+    }
+    #numbers-container{
+        width: 90%;
+    }
+    .sorteo__datos{
+        width: 90%;
+    }
+    .sorteo__referencia{
+        width: 100%;
+    }
+    .sorteo__lista-contendo{
+        width: 25%;
+    }
+    .sorteo__titulos-lista{
+        font-size: 1rem;
+    }
+    .sorteo__numero3{
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width:1024px){
+    .sorteo__titulo{
+        width: 50%;
+        text-align: center;
+    }
+    .sorteo__contenido-con-1{
+        flex-direction: column;
+        align-items: center;
+    }
+    #numbers-container{
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .sorteo__datos{
+        width: 90%;
+        order: -1;
+    }
+    .sorteo__referencia{
+        width: 100%;
+    }
+    .sorteo__lista-contendo{
+        width: 25%;
+    }
+    .sorteo__titulos-lista{
+        font-size: 1rem;
+    }
+    .sorteo__numero3{
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width:768px){
+    .sorteo__titulo {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    .sorteo__titulo--datos {
+        font-size: 1.8rem;
+    }
+    .sorteo__texto-indicaciones {
+        font-size: .8rem;
+    }
+    .sorteo__referencia {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sorteo__lista-contendo {
+        width: 80%;
+        margin: 5%;
+    }
+    .sorteo__texto-inferior {
+        text-align: center;
+    }
+    .sorteo__boton {
+        width: 80%;
+    }
+    #numbers-container {
+        width: none;
+    }
+    .number {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin: 3px;
+        
+    }
+}

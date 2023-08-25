@@ -1,0 +1,126 @@
+.prinicipal__compra{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    background: black;
+}
+
+.compra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 75%, rgba(2,2,2,1) 75%);
+    
+}
+.compra__figura{
+    width: 30%;
+    margin: 0 0 5% 5%;
+    padding-top: 10%;
+}
+.compra__titulo{
+    font-weight: 700;
+    font-size: 4.5rem;
+    color: var(--color-verde);
+    border-bottom: 4px solid black;
+}
+.compra__contenido{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+.compra__tematica{
+    font-size: 2.5rem;
+}
+.compra__costo{
+    font-size: 1.5rem;
+}
+.compra__informacion{
+    width: 40%;
+    text-align: justify;
+    margin-top: 1%;
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+}
+.compra__botones{
+    display: flex;
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+}
+
+.comprar__btn1{
+    color:var(--color-verde);
+    margin-right: 20%;
+}
+.comprar__btn1:hover{
+    background-color: var(--color-verde);
+    color: white;
+    transition: .5s linear;
+}
+.comprar__btn2{
+    color: var(--color-verde);
+    margin-left: 20%;
+}
+.comprar__btn2:hover{
+    background-color: var(--color-verde);
+    color: white;
+    transition: .5s linear;
+}
+@media screen and (max-width:1024px){
+    .compra__figura{
+        width: 50%;
+        margin-top: 40%;
+    }
+    .compra__costo{
+        font-size: 1.8rem;
+    }
+    .compra__informacion{
+        width: 60%;
+    }
+    .compra__botones{
+        flex-direction: column;
+        align-items: center;
+    }
+    .comprar__btn1{
+        margin: 0;
+    }
+    .comprar__btn2{
+        margin: 4% 0 0 0;
+    }
+    
+}
+@media screen and (max-width:768px){
+    .compra__titulo {
+        font-size: 2.5rem;
+    }
+    .compra{
+        width: 90%;
+    }
+    .compra__figura {
+        width: 80%;
+        margin-top: 115%;
+    }
+    .compra__tematica {
+        font-size: 1.8rem;
+    }
+    .compra__costo {
+        font-size: 1.2rem;
+    }
+    .compra__informacion {
+        width: 70%;
+        font-size: 1rem;
+    }
+    .comprar__btn1 {
+        background: var(--color-verde);
+        color: white;
+    }
+    .comprar__btn2 {
+        background: var(--color-verde);
+        color: white;
+    }
+}
